@@ -6,28 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Cemu | Wii U的PC模拟器</title>
     <link rel="shortcut icon" href="/CN/favicon2.ico">
-    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
-    <script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
-    <script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176598022-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-    gtag('config', 'UA-176598022-1');
-    </script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
     <!-- Start of header and footer script -->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script>
@@ -44,7 +22,7 @@
         <!-- Header -->
         <div id="header"></div>
         <div class="post-container">
-            <div style="font-size: 13px">
+            <div style="font-size: 15px; margin-bottom: 20px;">
                 <script type="text/javascript" src="https://api.vvhan.com/api/ian?type=js"></script>
                 <script>
                 ishan()
@@ -71,7 +49,7 @@
                         </a>
                     </div>
                     <div class="post-content">
-                        <p><strong>Cemu</strong> 是一款模拟任天堂Wii U系统的PC软件。 通过这一款模拟器，可以运行Wii U平台的大部分游戏，包括《塞尔达的传说:旷野之息》。 如果你想知道某一款Wii U的游戏是否可以运行，请在下方留言。</p>
+                        <p><strong>Cemu</strong> 是一款模拟任天堂Wii U系统的PC软件。 通过这一款模拟器，可以运行Wii U平台的大部分游戏，包括《塞尔达的传说:旷野之息》。 如果你想知道某一款Wii U的游戏是否可以运行，请在下方留言。这个教程内容比较多，所以大家耐心观看，内容会随着Cemu的版本发布更新。</p>
                         <blockquote style="font-size: 18px">
                             <a href="#软件介绍">&#128279软件介绍</a><br>
                             <a href="#软件安装">&#128279软件安装</a><br>
@@ -86,7 +64,7 @@
                         <p style="font-size: 18px"><strong>什么是CEMU模拟器?</strong></p>
                         <hr>
                         <p style="font-size: 17px">
-                            Cemus是一款还在开发中的模拟器，可以在PC电脑上运行任天堂游戏主机Wii U 的程序和游戏。截止到目前位置，这款模拟器可以流畅运行大部分Wii U的游戏。</p>
+                            Cemu是一款还在开发中的模拟器，可以在PC电脑上运行任天堂游戏主机Wii U 的程序和游戏。截止到目前位置，这款模拟器可以流畅运行大部分Wii U的游戏。</p>
                         <br>
                         <br>
                         <p style="font-size: 18px"><strong>怎么可以获取到游戏？</strong></p>
@@ -101,9 +79,97 @@
                         <p style="font-size: 17px">
                             游戏的运行很大取决于你的电脑配置。尽管Wii U主机本身没有很高的硬件配置，但是用模拟器来运行Wii U的游戏需要很好配置的电脑。请参考下面对电脑配置的要求。</p>
                         <br>
+                        <div style="border: 2px solid white;padding: 15px;">
+                            <p>
+                                <strong>处理器CPU推荐：</strong> AMD Ryzen 3 或者 Intel i5<br>
+                                <strong>内存RAM推荐：</strong> 8GB of RAM<br>
+                                <strong>显卡GPU推荐：</strong> NIVIDIA GTX 700 或者 AMD HD 7000系列<br><br>
+                                当然了，这些都是推荐的最低配置，如果想要达到很好的游戏体验，一个非常高的配置还是非常中要的。以下是up的电脑配置，可以60FPS，2K运行大部分游戏，包括《塞尔达 旷野之息》。<br><br>
+                                i7 9700k @3.6Ghz<br>
+                                16gb DDR4 3200Mhz RAM<br>
+                                RTX 2080 SUPER 8GB GDDR6<br>
+                                512GB M.2 PCIe NVMe SSD
+                            </p>
+                        </div>
                         <br>
                         <h3 id="软件安装" style="text-align: center;">软件安装</h3>
                         <br>
+                        <br>
+                        <p style="font-size: 18px"><strong>如何下载Cemu和Cemuhook？</strong></p>
+                        <hr>
+                        <p style="font-size: 17px">
+                            <ul>
+                                <li>Cemu 最新版本: <a href="https://cemu.info/#download" target="_blank">Cemu</a></li>
+                                <li>Cemuhook 最新版本: <a href="https://cemuhook.sshnuke.net/" target="_blank">Cemuhook</a></li>
+                            </ul>
+                            <div class="notice warn">
+                                如果无法访问下载地址，请使用VPN。
+                            </div>
+                        </p>
+                        <br>
+                        <p style="font-size: 18px"><strong>安装步骤</strong></p>
+                        <hr>
+                        <p style="font-size: 17px">
+                            <ol>
+                                <li>解压 Cemu <code class="language-plaintext highlighter-rouge">.zip</code> 到你的桌面 （模拟器已经安装成功，后面全部为设置和优化）
+                                    <ul style="margin-bottom: 5px">
+                                        <li>尽量直接解压到C：盘上。（游戏和游戏缓存随着游玩的时间，会占用很大的硬盘位置，建议设置到其他盘上，后面会有解释。）</li>
+                                    </ul>
+                                </li>
+                                <li>鼠标右击Cemu程序</li>
+                                <li>点击 <code class="language-plaintext highlighter-rouge">属性</code></li>
+                                <li>选择 <code class="language-plaintext highlighter-rouge">兼容性</code></li>
+                                <li>允许 “禁止全屏优化” 和 “管理员权限运行此程序”</li>
+                                <li>点击 <code class="language-plaintext highlighter-rouge">更改高DPI设置</code></li>
+                                <li>允许 “使用此设置修复此程序的缩放问题，而不是“设置”中的缩放问题</li>
+                                <li>允许 “替代高DPI缩放行为。缩放执行：应用程序”</li>
+                                <li>应用 <code class="language-plaintext highlighter-rouge">应用</code> -&gt; <code class="language-plaintext highlighter-rouge">确认</code></li>
+                            </ol>
+                            <div class="notice blue">
+                                以上设置是为了避免不同windows系统可能会造成的文件权限，和显示问题。除了第一步解压之外，其他设置不强求，但很强烈推荐。
+                            </div>
+                            <div class="notice blue">
+                                <figure data-type="image" tabindex="1"><img src="https://cemu.cfw.guide/assets/images/cemu-properties.png" alt="cemu compatibility setting" loading="lazy"></figure>
+                            </div>
+                            <ol start="10">
+                                <li>解压Cemuhook<code class="language-plaintext highlighter-rouge">.zip</code>压缩包到Cemu的文件夹</li>
+                                <li>确保和下面一致既可</li>
+                            </ol>
+                            <div class="notice blue">
+                                <figure data-type="image" tabindex="1"><img src="https://cemu.cfw.guide/assets/images/cemuhook.png" alt="cemuhook" loading="lazy"></figure>
+                            </div>
+                        </p>
+                        <br>
+                        <p style="font-size: 18px"><strong>Cemu模拟器初始化</strong></p>
+                        <hr>
+                        <p style="font-size: 17px">
+                            <ol>
+                                <li>双击打开Cemu</li>
+                                <li>请运行允许管理权力，如果有窗口打开</li>
+                                <li>然后你会看到Cemu的初始化页面
+                                    <ul style="margin-bottom: 5px">
+                                        <li>这一步会帮助你关于Cemu的一些初始化设置（很重要）</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                            <div class="notice blue">
+                                <figure data-type="image" tabindex="1"><img src="https://cemu.cfw.guide/assets/images/cemu-quickstart-guide.png" alt="cemu" loading="lazy"></figure>
+                            </div>
+                            <ul class="collapsible">
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+                                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+                                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                                </li>
+                            </ul>
+                        </p>
                         <br>
                         <h3 id="游戏安装" style="text-align: center;">游戏安装</h3>
                         <br>
