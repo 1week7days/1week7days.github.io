@@ -35,13 +35,13 @@
                 </a>
             </div>
             <div class="nav-item">
-                <a href="/CN" class="menu gt-a-link">
-                    <span class="iconify" data-icon="uil:letter-chinese-a" data-inline="false" style="color: white; " data-width="20" data-height="20"></span>
-                </a>
+               <a href="#" onclick="EN2CN(); return false">
+                    <span class="iconify" data-icon="uil:letter-chinese-a" data-inline="false" style="color: white; " data-width="20" data-height="20"></span></a>
+
                 <span class="iconify" data-icon="carbon:overflow-menu-vertical" data-inline="false" style="color: white;" data-width="30" data-height="30"></span>
-                <a href="/EN" class="menu gt-a-link">
-                    <span class="iconify" data-icon="ri:english-input" data-inline="false" style="color: white;" data-width="20" data-height="20"></span>
-                </a>
+               <a href="#" onclick="CN2EN(); return false">
+                    <span class="iconify" data-icon="ri:english-input" data-inline="false" style="color: white;" data-width="20" data-height="20"></span></a>
+                
             </div>
         </div>
     </div>
@@ -61,7 +61,17 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
 <!-- Music Player - MetingJS and APlayer -->
 <!-- require APlayer -->
-
 <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
 <!-- require MetingJS -->
 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<script>
+function CN2EN() {
+    var url = window.location.toString();
+    window.location = url.replace("com/CN", 'com/EN');
+}
+
+function EN2CN() {
+    var url = window.location.toString();
+    window.location = url.replace("com/EN", 'com/CN');
+}
+</script>
