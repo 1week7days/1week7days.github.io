@@ -1,51 +1,56 @@
-<nav class="navbar navbar-expand-lg">
-    <div class="navbar-brand">
-        <a href="/en">
-            <img class="user-avatar" src="/images/logo.png" alt="1week7days">
-        </a>
-    </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="navbar-nav mr-auto" style="text-align: center">
-            <div class="nav-item">
-                <a href="/en" class="menu gt-a-link">
-                    Home
-                </a>
-            </div>
-            <div class="nav-item">
-                <a href="/en/news" class="menu gt-a-link">
-                    News
-                </a>
-            </div>
-            <div class="nav-item">
-                <a href="/en/software" class="menu gt-a-link">
-                    Software
-                </a>
-            </div>
-            <div class="nav-item">
-                <a href="/en/tutorial" class="menu gt-a-link">
-                    Tutorial
-                </a>
-            </div>
-            <div class="nav-item">
-                <a href="/en/about" class="menu gt-a-link">
-                    About
-                </a>
-            </div>
-            <div class="nav-item">
-               <a href="#" onclick="EN2CN(); return false">
-                    <span class="iconify" data-icon="uil:letter-chinese-a" data-inline="false" style="color: white; " data-width="20" data-height="20"></span></a>
+<html>
 
-                <span class="iconify" data-icon="carbon:overflow-menu-vertical" data-inline="false" style="color: white;" data-width="30" data-height="30"></span>
-               <a href="#" onclick="CN2EN(); return false">
-                    <span class="iconify" data-icon="ri:english-input" data-inline="false" style="color: white;" data-width="20" data-height="20"></span></a>
-                
+<head>
+    <nav class="navbar navbar-expand-lg">
+        <div class="navbar-brand">
+            <a href="/en">
+                <img class="user-avatar" src="/images/logo.png" alt="1week7days">
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav mr-auto" style="text-align: center">
+                <div class="nav-item">
+                    <a href="/en" class="menu gt-a-link">
+                        Home
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="/en/news" class="menu gt-a-link">
+                        News
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="/en/software" class="menu gt-a-link">
+                        Software
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="/en/tutorial" class="menu gt-a-link">
+                        Tutorial
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="/en/about" class="menu gt-a-link">
+                        About
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" onclick="EN2CN(); return false">
+                        <span class="iconify" data-icon="uil:letter-chinese-a" data-inline="false" style="color: white; " data-width="20" data-height="20"></span></a>
+                    <span class="iconify" data-icon="carbon:overflow-menu-vertical" data-inline="false" style="color: white;" data-width="30" data-height="30"></span>
+                    <a href="#" onclick="CN2EN(); return false">
+                        <span class="iconify" data-icon="ri:english-input" data-inline="false" style="color: white;" data-width="20" data-height="20"></span></a>
+                </div>
             </div>
         </div>
-    </div>
-</nav>
+    </nav>
+</head>
+
+<body>
+</body>
 <!-- Link, Script, CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
 <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
@@ -64,6 +69,7 @@
 <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
 <!-- require MetingJS -->
 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<!--Chinese <-> English -->
 <script>
 function CN2EN() {
     var url = window.location.toString();
@@ -75,3 +81,6 @@ function EN2CN() {
     window.location = url.replace("com/en", 'com/cn');
 }
 </script>
+
+
+</html>

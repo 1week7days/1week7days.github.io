@@ -1,51 +1,56 @@
-<nav class="navbar navbar-expand-lg">
-    <div class="navbar-brand">
-        <a href="/cn">
-            <img class="user-avatar" src="/images/logo.png" alt="一周七天">
-        </a>
-    </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="navbar-nav mr-auto" style="text-align: center">
-            <div class="nav-item">
-                <a href="/cn" class="menu gt-a-link">
-                    首页
-                </a>
-            </div>
-            <div class="nav-item">
-                <a href="/cn/news" class="menu gt-a-link">
-                    分享
-                </a>
-            </div>
-            <div class="nav-item">
-                <a href="/cn/software" class="menu gt-a-link">
-                    软件
-                </a>
-            </div>
-            <div class="nav-item">
-                <a href="/cn/tutorial" class="menu gt-a-link">
-                    教程
-                </a>
-            </div>
-            <div class="nav-item">
-                <a href="/cn/about" class="menu gt-a-link">
-                    关于
-                </a>
-            </div>
-            <div class="nav-item">
-               <a href="#" onclick="EN2CN(); return false">
-                    <span class="iconify" data-icon="uil:letter-chinese-a" data-inline="false" style="color: white; " data-width="20" data-height="20"></span></a>
+<html>
 
-                <span class="iconify" data-icon="carbon:overflow-menu-vertical" data-inline="false" style="color: white;" data-width="30" data-height="30"></span>
-               <a href="#" onclick="CN2EN(); return false">
-                    <span class="iconify" data-icon="ri:english-input" data-inline="false" style="color: white;" data-width="20" data-height="20"></span></a>
-                
+<head>
+    <nav class="navbar navbar-expand-lg">
+        <div class="navbar-brand">
+            <a href="/cn">
+                <img class="user-avatar" src="/images/logo.png" alt="一周七天">
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav mr-auto" style="text-align: center">
+                <div class="nav-item">
+                    <a href="/cn" class="menu gt-a-link">
+                        首页
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="/cn/news" class="menu gt-a-link">
+                        分享
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="/cn/software" class="menu gt-a-link">
+                        软件
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="/cn/tutorial" class="menu gt-a-link">
+                        教程
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="/cn/about" class="menu gt-a-link">
+                        关于
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" onclick="EN2CN(); return false">
+                        <span class="iconify" data-icon="uil:letter-chinese-a" data-inline="false" style="color: white; " data-width="20" data-height="20"></span></a>
+                    <span class="iconify" data-icon="carbon:overflow-menu-vertical" data-inline="false" style="color: white;" data-width="30" data-height="30"></span>
+                    <a href="#" onclick="CN2EN(); return false">
+                        <span class="iconify" data-icon="ri:english-input" data-inline="false" style="color: white;" data-width="20" data-height="20"></span></a>
+                </div>
             </div>
         </div>
-    </div>
-</nav>
+    </nav>
+</head>
+
+<body>
+</body>
 <!-- Link, Script, CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
 <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
@@ -64,6 +69,7 @@
 <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
 <!-- require MetingJS -->
 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<!--Chinese <-> English -->
 <script>
 function CN2EN() {
     var url = window.location.toString();
@@ -75,3 +81,12 @@ function EN2CN() {
     window.location = url.replace("com/en", 'com/cn');
 }
 </script>
+<!-- API online -->
+<script src="https://api.vvhan.com/api/yinghua"></script>
+<script src='https://api.vvhan.com/api/snow'></script>
+<!--
+<script src="https://myhkw.cn/api/player/165982616578" id="myhk" key="165982616578" m="1"></script>
+-->
+<script src="https://myhkw.cn/api/player/159876436167" id="myhk" key="159876436167" m="1"></script>
+
+</html>
