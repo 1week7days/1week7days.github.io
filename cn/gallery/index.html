@@ -4,9 +4,11 @@
     <meta charset="utf-8" />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>一周七天 | 关于</title>
+    <title>一周七天 | 摄影集</title>
     <link rel="shortcut icon" href="/cn/favicon2.ico">
-    <link rel="stylesheet" href="/styles/grid-gallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/tailwind.min.css">
 </head>
 
 <body>
@@ -50,31 +52,44 @@
                         <!-- LikeBtn.com END -->
                     </div>
                     <h2 class="post-title">
-                        一个 &middot; 虚度时光的追风少年
+                        我 &middot; 摄影集
                     </h2>
                     <div class="post-info">
                         <time class="post-time gt-c-content-color-first">
-                            · 2021-05-01 · 晴 ·
+                            · 2022-XX-XX · 未 ·
                         </time>
                         <a href="\" class="post-tags">
                             # 一周七天
                         </a>
                     </div>
-                    <div class="gg-container">
-                        <div class="gg-box" id="default">
-                            <!-- This gallery takes it the default values -->
-                            <img src="/img/1.jpg">
-                            <img src="/img/2.jpg">
-                            <img src="/img/3.jpg">
-                            <img src="/img/4.jpg">
-         
-                        </div>
+                    <div class="flex flex-wrap gap-10 justify-center max-w-10xl mx-auto px-6">
+                        <a data-caption="Vestibulum lobortis ultricies ipsum, a maximus ligula dignissim in. Sed consectetur tellus egestas, consequat dolor at, tempus augue. " data-fancybox="gallery" href="https://lipsum.app/id/1/800x450">
+                            <img class="rounded" src="https://lipsum.app/id/1/200x150" />
+                        </a>
+                        <a data-caption="Vestibulum lobortis ultricies ipsum,Short caption" data-fancybox="gallery" href="https://lipsum.app/id/2/800x450">
+                            <img class="rounded" src="https://lipsum.app/id/2/200x150" />
+                        </a>
+                        <a data-caption="Vestibulum lobortis ultricies ipsum," data-fancybox="gallery" href="https://lipsum.app/id/3/800x450">
+                            <img class="rounded" src="https://lipsum.app/id/3/200x150" />
+                        </a>
+                        <a data-caption="Vestibulum lobortis ultricies ipsum," data-fancybox="gallery" href="https://lipsum.app/id/4/800x450">
+                            <img src="https://lipsum.app/id/4/200x150" />
+                        </a>
+                        <a data-caption="Vestibulum lobortis ultricies ipsum," data-fancybox="gallery" href="https://lipsum.app/id/5/800x450">
+                            <img class="rounded" src="https://lipsum.app/id/5/200x150" />
+                        </a>
+                        <a data-caption="Vestibulum lobortis ultricies ipsum," data-fancybox="gallery" href="https://lipsum.app/id/6/800x450">
+                            <img class="rounded" src="https://lipsum.app/id/6/200x150" />
+                        </a>
+                        <a data-caption="Vestibulum lobortis ultricies ipsum," data-fancybox="gallery" href="https://lipsum.app/id/7/800x450">
+                            <img class="rounded" src="https://lipsum.app/id/7/200x150" />
+                        </a>
                     </div>
                 </article>
             </div>
             <script src='https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
             <style>
-                div#vcomments {
+            div#vcomments {
                 width: 100%;
                 max-width: 1000px;
                 padding: 2.5%
@@ -90,7 +105,7 @@
                 avatar: 'wavatar',
                 pageSize: 10,
                 recordIp: true,
-                placeholder: '今天你有什么悄悄话~~？',
+                placeholder: '你说？',
                 visitor: false,
             });
             </script>
@@ -101,8 +116,20 @@
             </script>
         </div>
     </div>
-    <script type="text/javascript" src="/styles/grid-gallery.min.js"></script>
-    <script type="text/javascript" src="/styles/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script>
+    // Customization example
+    Fancybox.bind('[data-fancybox="gallery"]', {
+        Thumbs: true,
+        Toolbar: true,
+
+        Image: {
+            zoom: true,
+            click: false,
+            wheel: "slide",
+        },
+    });
+    </script>
 </body>
 
 </html>

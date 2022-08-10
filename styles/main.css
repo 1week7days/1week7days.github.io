@@ -90,7 +90,7 @@ pre {
     /* 1 */
     font-size: 1em;
     /* 2 */
-    color: #f39c12 ;
+    color: #f39c12;
 }
 
 /**
@@ -2306,4 +2306,32 @@ input::placeholder {
 
 .notice.warn {
     background-color: RGBA(238, 63, 77, 0.2)
+}
+
+
+/* gallery */
+a[data-fancybox] img {
+    cursor: zoom-in;
+}
+
+.fancybox__container {
+    --fancybox-bg: rgba(0, 0, 0, 0.7);
+}
+
+.fancybox__container .fancybox__content {
+    /* Create white border around the image */
+    box-sizing: content-box;
+    padding: 1rem;
+    background: #fff;
+
+    border-radius: 6px;
+    color: #374151;
+    box-shadow: 0 8px 23px rgb(0 0 0 / 50%);
+}
+
+.fancybox__caption {
+    max-width: 80%;
+
+    /* Prevent opacity change when dragging up/down */
+    --fancybox-opacity: 1;
 }
