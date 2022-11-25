@@ -22,8 +22,9 @@
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" type="text/javascript"></script>
         
         <!-- nanogallery2 -->
-        <link  href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
-        <script  type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <link href="https://unpkg.com/nanogallery2@2.4.2/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="https://unpkg.com/nanogallery2@2.4.2/dist/jquery.nanogallery2.min.js"></script>
         <!-- End gallery -->
     </head>
     <body>
@@ -68,24 +69,33 @@
                                 # 一周七天
                             </a>
                         </div>
-                        <!-- ### start of the gallery definition ### -->
-                        <div id="nanogallery2"
-                            data-nanogallery2 = '{
-                            "thumbnailHeight":  150,
-                            "thumbnailWidth":   150,
-                            "itemsBaseURL":     "https://nanogallery2.nanostudio.org/samples/"
-                            }' >
-                            
-                            <!-- gallery content -->
-                            <a href = "berlin1.jpg"   data-ngThumb = "berlin1_t.jpg" > Berlin 1 </a>
-                            <a href = "berlin2.jpg"   data-ngThumb = "berlin2_t.jpg" > Berlin 2 </a>
-                            <a href = "berlin3.jpg"   data-ngThumb = "berlin2_t.jpg" > Berlin 3 </a>
-                            <a href="/img/1.jpg" data-ngThumb="/img/1_cropped.jpg">
-                                dasdas
-                            </a>
-                        </div>
-                        <!-- ### end of the gallery definition ### -->
                         <div class="flex flex-wrap gap-10 justify-center max-w-10xl mx-auto px-6">
+                            <!-- ### start of the gallery definition ### -->
+                            <div id="nanogallery2" data-nanogallery2='{
+                                "thumbnailHeight":           200,
+                                "thumbnailWidth":            200,
+                                "itemsBaseURL":            "https://1week7days.github.io/img/",
+                                "galleryMosaic":             [
+                                { "w": 5, "h": 3, "c": 2,  "r": 1 },
+                                { "w": 2, "h": 2, "c": 1,  "r": 2 },
+                                { "w": 2, "h": 2, "c": 7,  "r": 2 },
+                                { "w": 2, "h": 2, "c": 2,  "r": 4 },
+                                { "w": 3, "h": 4, "c": 4,  "r": 4 },
+                                { "w": 3, "h": 4, "c": 7,  "r": 4 },
+                                { "w": 2, "h": 2, "c": 10, "r": 5 },
+                                { "w": 4, "h": 2, "c": 11, "r": 6 }
+                                ],
+                                "thumbnailGutterWidth":      0,
+                                "thumbnailGutterHeight":     0,
+                                "thumbnailBorderHorizontal": 5,
+                                "thumbnailBorderVertical":   5,
+                                "galleryMaxRows":            1,
+                                "galleryDisplayMode":        "rows",
+                                "galleryDisplayMode":        "pagination",
+                                "thumbnailLabel":            { "display" : false }
+                                }'>
+                            </div>
+                            <!-- ### end of the gallery definition ### -->
                             <a data-caption="Busy street of Manhattan, Time Square, June 2018
                                 <br> Shot on OnePlus 6 | 1/139s | f/1.7 | ISO 100" data-fancybox="gallery" href="/img/1.jpg">
                                 <img class="rounded" src="/img/1_cropped.jpg" />
