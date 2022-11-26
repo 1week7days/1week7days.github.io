@@ -1936,6 +1936,7 @@ max-width: 80%;
 /* Prevent opacity change when dragging up/down */
 --fancybox-opacity: 1;
 }
+
 /* snow effect */
 .snowflake {
 color: #fff;
