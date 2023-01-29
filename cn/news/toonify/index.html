@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <head>
     <meta charset="utf-8" />
     <meta name="description" content="" />
@@ -7,14 +6,13 @@
     <title>Toonify | 一个基于人工智能可以把你的变成动画人物的网页工具</title>
     <link rel="shortcut icon" href="/cn/favicon2.ico">
 </head>
-
 <body>
     <!-- Start of header and footer script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
     $(function() {
-        $("#header").load("/cn/header.html");
-        $("#footer").load("/cn/footer.html");
+    $("#header").load("/cn/header.html");
+    $("#footer").load("/cn/footer.html");
     });
     </script>
     <!-- End of header and footer script -->
@@ -22,14 +20,6 @@
         <!-- Header -->
         <div id="header"></div>
         <div class="post-container">
-            <div style="font-size: 15px;">
-                <script type="text/javascript" src="https://yuxinghe.top/api/ian.php?type=js"></script>
-                <script>
-                ishan()
-                </script>
-            </div>
-            <br>
-            <br>
             <div class="post-detail gt-bg-theme-color-second">
                 <article class="gt-post-content">
                     <div style="text-align: right;">
@@ -37,23 +27,23 @@
                         <span class="likebtn-wrapper" data-theme="custom" data-icon_l="thmb7-u" data-icon_d="thmb7-d" data-icon_l_c="rgba(255,255,255,0.68)" data-icon_l_c_v="#64b587" data-icon_d_c="rgba(255,255,255,0.68)" data-icon_d_c_v="rgba(100,181,135,0.67)" data-label_c="rgba(255,255,255,0.68)" data-label_c_v="#64b587" data-counter_l_c="#64b587" data-counter_d_c="rgba(100,181,135,0.67)" data-bg_c="rgba(250,250,250,0)" data-bg_c_v="rgba(250,250,250,0)" data-brdr_c="rgba(198,198,198,0)" data-lang="zh_CN" data-i18n_like="不错哦" data-ef_voting="heartbeat" data-identifier="toonify_CN"></span>
                         <script>
                         (function(d, e, s) {
-                            if (d.getElementById("likebtn_wjs")) return;
-                            a = d.createElement(e);
-                            m = d.getElementsByTagName(e)[0];
-                            a.async = 1;
-                            a.id = "likebtn_wjs";
-                            a.src = s;
-                            m.parentNode.insertBefore(a, m)
+                        if (d.getElementById("likebtn_wjs")) return;
+                        a = d.createElement(e);
+                        m = d.getElementsByTagName(e)[0];
+                        a.async = 1;
+                        a.id = "likebtn_wjs";
+                        a.src = s;
+                        m.parentNode.insertBefore(a, m)
                         })(document, "script", "//w.likebtn.com/js/w/widget.js");
                         </script>
                         <!-- LikeBtn.com END -->
                     </div>
                     <h2 class="post-title">
-                        Toonify | 一个基于人工智能可以把你变成动画人物的在线工具
+                    Toonify | 一个基于人工智能可以把你变成动画人物的在线工具
                     </h2>
                     <div class="post-info">
                         <time class="post-time gt-c-content-color-first">
-                            · 2021-05-01 · 晴 ·
+                        · 2021-05-01 · 晴 ·
                         </time>
                         <a href="/" class="post-tags">
                             # 在线工具
@@ -63,108 +53,107 @@
                         <p><strong>Toonify</strong> 是Justin Pinkney和Doron Adler创建的一系列换脸在线工具。使用方法非常简单，只需要准备一张自己的照片。</p>
                         <h3>工具介绍和使用方法</h3>
                         <p>在开始介绍工具之前，我们先看一些示例。</p>
-                        <figure data-type="image" tabindex="1" style="width:50%;float: left;"><img src="https://toonify.photos/images/examples/display/smith.jpg" alt="toonify samples" loading="lazy"></figure>
-                        <figure data-type="image" tabindex="1" style="width:50%;float: right;">
-                            <img src="https://toonify.photos/images/examples/display/hd_stone.jpg" alt="toonify samples" loading="lazy"></figure>
-                        <figure data-type="image" tabindex="1" style="width:50%;float: left;"><img src="https://toonify.photos/images/examples/display/caprio.jpg" alt="toonify samples" loading="lazy">
-                        </figure>
-                        <figure data-type="image" tabindex="1" style="width:50%;float: right;">
-                            <img src="https://toonify.photos/images/examples/display/gosling.jpg" alt="toonify samples" loading="lazy"></figure>
-                        <P>更多示例可到 <a href="https://toonify.photos/">Toonify</a> 官方网站查看。</P>
-                        <P>截止到本文站发布，Toonify 一共有五个不同的变脸工具，如下：</P>
-                        <blockquote>
-                            <p> ○ [Free] 经典Toonify：经典迪士尼卡通人物 <br>
-                                ○ [HD] 高清Toonify：高清版本迪士尼卡通人物 <br>
-                                ○ [SD] 漫画风格：手绘漫画风格 <br>
-                                ○ [SD] Emoji表情：和经典Toonify十分相似，只是风格更偏向emoji <br>
-                                ○ [SD] 恐怖表情：符合万圣节氛围的照片 <br>
-                            </p>
-                        </blockquote>
-                        <p>Toonify工具利用深度学习的一种方法 Generative Adversarial Networks (GAN), 也被称作生成对抗网络。由于用于训练AI的大部分素材都来源于迪士尼的角色。所以生成的结果通常也是偏向于迪士尼卡通人物。<br><br>这个工具的使用方法非常简单：只需准备一张五官清晰的照片，上传即可生成对应的变脸。</p>
-                        <P style="font-size: 12px"><code>*注：据网站，这个网站不会储存任何人的照片。上传的任何照片在得到结果后会被立即删除。所以大家可以放心使用，不必担心隐私问题。</code></P>
-                        <P>我这边准备了一个来自<a href="https://thispersondoesnotexist.com/"> thispersondoesnotexist</a> 网站的一张图片。 （顺便提一下这个网站，会随机生成一张这个世界上并不存在的一个人的头像。 但注意这个网站生成的图片是 .jfif 格式的，需要手动改为 .jpeg 格式的，否则toonify无法识别。)</P>
-                        <p><code>使用方法： 选择工具 &gt;&gt; 上传图片 &gt;&gt; 点击Toonify按钮 &gt;&gt; 下载保存</code></p>
-                        <figure data-type="image" tabindex="1" style="width:40%;">
-                            <img src="/images/toonify1.png" alt="toonify results" loading="lazy"></figure>
-                        <hr>
-                        <h3>版本说明</h3>
-                        <blockquote>
-                            <table style="float: right;">
-                                <tr>
-                                    <th>价格</th>
-                                    <th>HD</th>
-                                    <th>SD</th>
-                                </tr>
-                                <tr>
-                                    <td>£3（~27元）</td>
-                                    <td>10张HD</td>
-                                    <td>无限张SD</td>
-                                </tr>
-                                <tr>
-                                    <td>£5（~45元）</td>
-                                    <td>20张HD</td>
-                                    <td>无限张SD</td>
-                                </tr>
-                                <tr>
-                                    <td>£10（~90元）</td>
-                                    <td>100张HD</td>
-                                    <td>无限张SD</td>
-                                </tr>
-                                <tr>
-                                    <td>£25（~225元）</td>
-                                    <td>1000张HD</td>
-                                    <td>无限张SD</td>
-                                </tr>
-                            </table>
-                            <p> ○ 免费版本：免费 Free Toonify <br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;价格：免费 <br>
-                                <br>
-                                ○ 标清版本：画像，表情，恐怖 SD Toonify <br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;价格：右边表格<br>
-                                <br>
-                                ○ 高清版本：高清 HD Toonify <br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;价格：右边表格<br>
-                            </p>
-                        </blockquote>
-                        <P>高清HD版本除了可以得到更好的效果图片之外，还可以调节图片的各种细节。比如：年龄，微笑程度，生气程度，大眼等等。。。</P>
-                        <figure data-type="image" tabindex="1" style="width:40%;">
-                            <img src="/images/toonify2.png" alt="toonify" loading="lazy"></figure>
-                        <hr>
-                        <h3 id="工具地址">工具地址</h3>
-                        <p><a href="https://toonify.photos/">官网：https://toonify.photos/</a></p>
-                        <br>
-                    </div>
-                </article>
-            </div>
-            <script src='https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
-            <style>
-            div#vcomments {
-                width: 100%;
-                max-width: 1000px;
-                padding: 2.5%
-            }
-            </style>
-            <div id="vcomments"></div>
-            <script>
-            new Valine({
-                lang: 'zh-CN',
-                el: '#vcomments',
-                appId: 'kKhswByQYucVO6pY1h1xSW3j-MdYXbMMI',
-                appKey: 'RvLMCCUlXOGyMjhy0yqFl5bJ',
-                avatar: 'wavatar',
-                pageSize: 10,
-                recordIp: true,
-                placeholder: '今天想说些什么~~',
-                visitor: false,
-            });
-            </script>
-            <!-- Footer -->
-            <div id="footer"></div>
-            <script>
-            hljs.initHighlightingOnLoad()
-            </script>
+                    <figure data-type="image" tabindex="1" style="width:50%;float: left;"><img src="https://toonify.photos/images/examples/display/smith.jpg" alt="toonify samples" loading="lazy"></figure>
+                    <figure data-type="image" tabindex="1" style="width:50%;float: right;">
+                    <img src="https://toonify.photos/images/examples/display/hd_stone.jpg" alt="toonify samples" loading="lazy"></figure>
+                    <figure data-type="image" tabindex="1" style="width:50%;float: left;"><img src="https://toonify.photos/images/examples/display/caprio.jpg" alt="toonify samples" loading="lazy">
+                    </figure>
+                    <figure data-type="image" tabindex="1" style="width:50%;float: right;">
+                    <img src="https://toonify.photos/images/examples/display/gosling.jpg" alt="toonify samples" loading="lazy"></figure>
+                    <P>更多示例可到 <a href="https://toonify.photos/">Toonify</a> 官方网站查看。</P>
+                    <P>截止到本文站发布，Toonify 一共有五个不同的变脸工具，如下：</P>
+                    <blockquote>
+                        <p> ○ [Free] 经典Toonify：经典迪士尼卡通人物 <br>
+                            ○ [HD] 高清Toonify：高清版本迪士尼卡通人物 <br>
+                            ○ [SD] 漫画风格：手绘漫画风格 <br>
+                            ○ [SD] Emoji表情：和经典Toonify十分相似，只是风格更偏向emoji <br>
+                            ○ [SD] 恐怖表情：符合万圣节氛围的照片 <br>
+                        </p>
+                    </blockquote>
+                    <p>Toonify工具利用深度学习的一种方法 Generative Adversarial Networks (GAN), 也被称作生成对抗网络。由于用于训练AI的大部分素材都来源于迪士尼的角色。所以生成的结果通常也是偏向于迪士尼卡通人物。<br><br>这个工具的使用方法非常简单：只需准备一张五官清晰的照片，上传即可生成对应的变脸。</p>
+                    <P style="font-size: 12px"><code>*注：据网站，这个网站不会储存任何人的照片。上传的任何照片在得到结果后会被立即删除。所以大家可以放心使用，不必担心隐私问题。</code></P>
+                    <P>我这边准备了一个来自<a href="https://thispersondoesnotexist.com/"> thispersondoesnotexist</a> 网站的一张图片。 （顺便提一下这个网站，会随机生成一张这个世界上并不存在的一个人的头像。 但注意这个网站生成的图片是 .jfif 格式的，需要手动改为 .jpeg 格式的，否则toonify无法识别。)</P>
+                    <p><code>使用方法： 选择工具 &gt;&gt; 上传图片 &gt;&gt; 点击Toonify按钮 &gt;&gt; 下载保存</code></p>
+                    <figure data-type="image" tabindex="1" style="width:40%;">
+                    <img src="/images/toonify1.png" alt="toonify results" loading="lazy"></figure>
+                    <hr>
+                    <h3>版本说明</h3>
+                    <blockquote>
+                        <table style="float: right;">
+                            <tr>
+                                <th>价格</th>
+                                <th>HD</th>
+                                <th>SD</th>
+                            </tr>
+                            <tr>
+                                <td>£3（~27元）</td>
+                                <td>10张HD</td>
+                                <td>无限张SD</td>
+                            </tr>
+                            <tr>
+                                <td>£5（~45元）</td>
+                                <td>20张HD</td>
+                                <td>无限张SD</td>
+                            </tr>
+                            <tr>
+                                <td>£10（~90元）</td>
+                                <td>100张HD</td>
+                                <td>无限张SD</td>
+                            </tr>
+                            <tr>
+                                <td>£25（~225元）</td>
+                                <td>1000张HD</td>
+                                <td>无限张SD</td>
+                            </tr>
+                        </table>
+                        <p> ○ 免费版本：免费 Free Toonify <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;价格：免费 <br>
+                            <br>
+                            ○ 标清版本：画像，表情，恐怖 SD Toonify <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;价格：右边表格<br>
+                            <br>
+                            ○ 高清版本：高清 HD Toonify <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;价格：右边表格<br>
+                        </p>
+                    </blockquote>
+                    <P>高清HD版本除了可以得到更好的效果图片之外，还可以调节图片的各种细节。比如：年龄，微笑程度，生气程度，大眼等等。。。</P>
+                    <figure data-type="image" tabindex="1" style="width:40%;">
+                    <img src="/images/toonify2.png" alt="toonify" loading="lazy"></figure>
+                    <hr>
+                    <h3 id="工具地址">工具地址</h3>
+                    <p><a href="https://toonify.photos/">官网：https://toonify.photos/</a></p>
+                    <br>
+                </div>
+            </article>
         </div>
+        <script src='https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
+        <style>
+        div#vcomments {
+        width: 100%;
+        max-width: 1000px;
+        padding: 2.5%
+        }
+        </style>
+        <div id="vcomments"></div>
+        <script>
+        new Valine({
+        lang: 'zh-CN',
+        el: '#vcomments',
+        appId: 'kKhswByQYucVO6pY1h1xSW3j-MdYXbMMI',
+        appKey: 'RvLMCCUlXOGyMjhy0yqFl5bJ',
+        avatar: 'wavatar',
+        pageSize: 10,
+        recordIp: true,
+        placeholder: '今天想说些什么~~',
+        visitor: false,
+        });
+        </script>
+        <!-- Footer -->
+        <div id="footer"></div>
+        <script>
+        hljs.initHighlightingOnLoad()
+        </script>
     </div>
+</div>
 </body>
-
 </html>
